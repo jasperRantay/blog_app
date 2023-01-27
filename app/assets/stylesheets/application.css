@@ -21,21 +21,29 @@ h1{
 form input[type="submit"]{
     padding: 8px;
     margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .75);
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover{
+    color: blue;
 }
 
 form input[type="text"]{
   width: 100%;
-  padding: 16px
+  padding: 8px
 }
 textarea {
     width: 100%;
-    height: 150px;
+    height: 50px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
+    overflow-y: scroll;
   }
 .header{
     width: 100%;
@@ -103,10 +111,12 @@ textarea {
 
 .comments{
     width: 100%;
-    height: 100%;
+    height: 150px;
     border: 1px solid black;
     padding: 16px 0 16px 8px;
     margin-bottom: 10px;
+    overflow-y: scroll;
+    border-radius: 4px;
 }
 .comments h3{
     margin-bottom: 8px;
