@@ -12,10 +12,25 @@
             <h1>Articles</h1>
         </div>
         <div class="main-body">
+
             <div class="card">
                 <div class="cards">
                     <% @articles.each do |article| %>
                     <div class=card-header>
+                        <%= article.title %>
+                    </div>
+                    <div class="card=body">
+                        <%= article.body %>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cards">
+                    <% @articles.each do |article| %>
+                    <div class=card-header>
+                    <p>delete me</p>
                         <%= article.title %>
                     </div>
                     <div class="card=body">
