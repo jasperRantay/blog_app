@@ -13,7 +13,7 @@
         <div class="main-body">
             <div class=main-show>
                 <h2><%= @article.title %></h2>
-                <p><%= @article.body %>
+                <p style="margin-left: 16px"><%= @article.body %>
                 <div>
                     <%= link_to "Edit", edit_article_path(@article) %>
                     <%= link_to "Delete", article_path(@article),
@@ -24,12 +24,12 @@
                     %>
                 </div>
 
-                <div>
+                <div class="comments">
                     <h3>Comments</h3>
-                        <%= render @article.comments %>
+                    <p><%= render @article.comments %><p>
                 </div>
 
-                <div class="comments">
+                <div>
                     <h2>Add a comment:</h2>
                         <%= render 'comments/form' %>
                 </div>

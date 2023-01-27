@@ -1,11 +1,10 @@
 
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
+  <p >
+    <%= comment.commenter %>: <span style="font-size: 14px;"><%= comment.body %></span>
+  </p>  
+    <p  style="margin-bottom:16px;">
+    <%= link_to "Delete Comment", [comment.article, comment], data: {
+                  turbo_method: :delete,
+                  turbo_confirm: "Are you sure?"
+                } %>
   </p>
-
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-  
