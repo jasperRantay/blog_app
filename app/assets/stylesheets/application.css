@@ -47,7 +47,7 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    column-gap: 16px;
+    column-gap: 24px;
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
 }
