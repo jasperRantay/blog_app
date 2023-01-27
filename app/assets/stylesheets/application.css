@@ -26,7 +26,7 @@ h1{
     top: 0;
     left: 0;
 }
-.nav-main a:nth-child(2), p{
+.nav-main a:nth-child(2){
     position: absolute;
     right: 0;
 }
@@ -56,6 +56,17 @@ h1{
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
 }
+
+
+/* SHOW */
+
+.main-show{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 .card{
     width: 200px;
     height: 150px;
